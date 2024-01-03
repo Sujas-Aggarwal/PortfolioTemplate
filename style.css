@@ -1,0 +1,294 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+*::selection {
+  background: red;
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 100%;
+  overflow: hidden;
+  height: min-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main {
+  justify-content: flex-start;
+  min-height: 100vh;
+  background: #0a0a0b;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.greybox{
+    background:#2E3038;
+}
+.main::-webkit-scrollbar {
+  display: none;
+}
+.wrapper {
+  width: 85vw;
+}
+nav {
+  width: 100vw;
+  height: min-content;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+.main-navbar {
+  height: min-content;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+.left-nav > h1 {
+  font-size: 25px;
+  cursor: pointer;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.nav-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.middle-nav > ul {
+  list-style: none;
+  display: flex;
+  width: 35vw;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #666;
+}
+.middle-nav > ul > li {
+  cursor: pointer;
+}
+.get-in-touch-button{
+  background: #fbe850;
+  outline: none;
+  border: none;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+  padding: 15px 35px;
+  font-size: 18px;
+}
+.right-nav > * {
+  cursor: pointer;
+}
+.right-nav > #burger-menu {
+  display: none;
+}
+
+.header-start {
+  width: 70%;
+  margin: 0px 0px 50px 0px;
+}
+.header-start > h1 {
+  font-size: 60px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.header-start > p {
+  font-size: 20px;
+  color: #b7b7b7;
+  width: 80%;
+  margin: 30px 0px;
+}
+.get-in-touch-link {
+  display: none;
+}
+
+.header-company-logo{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    margin: 50px 0px;
+}
+.header-examples{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:50px 0px;
+    flex-wrap: wrap;
+    gap:2%;
+}
+.card{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+    color: whitesmoke;
+    margin-bottom: 50px;
+}
+
+.card> .card-img{
+    width: 100%;
+    height: min-content;
+}
+.card> .card-img>img{
+    width: 100%;
+}
+.card>.card-text>h2{
+    font-family: 'Poppins';
+    font-size: 30px;
+    margin: 10px 5px;
+}
+.card>.card-text>p{
+    font-family: 'Poppins';
+    line-height: 25px;
+    margin: 0px 5px;
+}
+.second-section>.wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 0px;
+
+}
+.second-section>.wrapper>div{
+    width: 48%;
+    line-height: 25px;
+    font-family: 'Poppins';
+}
+.second-section>.wrapper h2{
+    margin-bottom:20px ;
+}
+.get-in-touch>.wrapper{
+    padding:40px 0;
+}
+.get-in-touch>.wrapper>.content-div{
+    width: 60%;
+}
+.get-in-touch>.wrapper>.content-div>h2{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.get-in-touch>.wrapper p{
+    margin: 10px 0px;
+    font-size:14px;
+    font-family:'Poppins';
+}
+footer>.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+footer>.wrapper>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins';
+}
+footer>.wrapper>.right-div{
+    gap: 20px;
+}
+/* start of tablet styles */
+@media screen and (max-width: 900px) {
+  .wrapper {
+    width: 90vw;
+  }
+  .right-nav {
+    display: none;
+  }
+  .right-nav>button{
+    display: none;
+  }
+  .middle-nav > ul {
+    width: 50vw;
+  }
+  .header-start {
+    width: 80%;
+    margin-top: 10px;
+  }
+  .header-start > h1 {
+    font-size: 40px;
+  }
+  .header-start > p {
+    font-size: 16px;
+  }
+  .card{
+    width: 80%;
+  }
+  .second-section>.wrapper{
+    justify-content: center;
+  }
+  .second-section>.wrapper>div{
+    width: 80%;
+  }
+}
+
+/* start of phone styles */
+@media screen and (max-width: 600px) {
+    *::-webkit-scrollbar{
+    display: none;
+    }
+  .right-nav {
+    display: flex;
+  }
+  .right-nav > #burger-menu {
+    display: flex;
+  }
+  .middle-nav > ul {
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 15vh;
+    width: 100vw;
+    background: #0a0a0b;
+    height: 40vh;
+    justify-content: space-evenly;
+    color: #999999;
+  }
+  .get-in-touch-link {
+    display: flex;
+  }
+  .header-start {
+    width: 100%;
+    margin-top: 0px;
+  }
+  .hidden {
+    display: none;
+  }
+  .header-start > h1 {
+    font-size: 30px;
+  }
+  .header-start > p {
+    font-size: 14px;
+  }
+  .header-company-logo{
+    justify-content: flex-start;
+  }
+  .card{
+    width: 100%;
+  }
+  p{
+    font-size: 14px;
+  }
+  .second-section>.wrapper>div{
+    width: 90%;
+}
+.get-in-touch>.wrapper>.content-div>h2{
+    font-size: 25px;
+}
+.get-in-touch>.wrapper>.content-div{
+    width: 100%;
+}
+}
