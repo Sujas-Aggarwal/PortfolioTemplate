@@ -159,7 +159,7 @@ nav {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 40px 0px;
+    padding: 60px 0px;
 
 }
 .second-section>.wrapper>div{
@@ -171,7 +171,7 @@ nav {
     margin-bottom:20px ;
 }
 .get-in-touch>.wrapper{
-    padding:40px 0;
+    padding:60px 0;
 }
 .get-in-touch>.wrapper>.content-div{
     width: 60%;
